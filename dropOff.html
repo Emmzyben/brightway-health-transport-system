@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="shortcut icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>g">
+    <title>Drop Off form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" style="position:sticky;top:0">
+        <div class="div1">
+          <img src="images/logo.png">
+        </div>
+        <div class="div2">
+      
+    
+        </div>
+      </header>
+      <aside> 
+        <div>
+          <img src="images/logo.png" alt="" >
+      </div> 
+          <div onclick="openNav()" >
+                <div class="container" onclick="myFunction(this)" id="sideNav" >
+                    <p style="border: 1px solid white;padding: 10px;border-radius: 7px;color: white;">Menu</p>
+                  </div>
+                </div>
+      </aside>
+
+  <nav style="z-index: 1;">
+    <div id="mySidenav" class="sidenav">
+        <a href="admin.php">Company records</a>
+        <a href="transport.php">Transport records</a>
+        <a href="generate.html">Generate report</a>
+        <a href="insert.php">Insert transport record</a>
+         
+        <a href="patient.php">Create patient record</a>
+        <a href="create_driver.php">Create Driver Record</a>
+        <a href="create_bus.php">Create Bus Record</a>
+        
+            <a href="logout.php">Log Out</a></li>
+    </div>
+    <script>
+    
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  var open = false;
+
+function openNav() {
+    var sideNav = document.getElementById("mySidenav");
+    
+    if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "250px";
+        open = true;
+    } else {
+        sideNav.style.width = "0";
+        open = false;
+    }
+}
+    </script>
+</nav>
+<main>
+<div id="divide">
+    <div class="divo">
+        <div >
+        <h3>Admin dashboard</h3>
+    <ul>
+        <li><a href="admin.php">Company records</a></li>
+        <li><a href="transport.php">Transport records</a></li>
+        <li><a href="generate.html">Generate report</a></li>
+        <li><a href="insert.php">Insert transport record</a></li>
+         
+        <li><a href="patient.php">Create patient record</a></li>
+        <li><a href="create_driver.php">Create Driver Record</a></li>
+        <li><a href="create_bus.php">Create Bus Record</a></li>
+        <li>
+            <a href="logout.php">Log Out</a></li>
+    </ul>
+    </div> 
+    </div>
+    
+   <div class="divide1">
+    <h3>Patient List</h3>
+<p>Select Patient</p>
+<div>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Select</th>
+        </tr>
+        <tr>
+            <td>Emmanuel</td>
+            <td>Amadi</td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+</div>
+</div>  
+
+<div class="divide2">
+<form action="">
+        <label for="">Drop-off date</label><br>
+        <input type="date" name="pickup_date"><br>
+        <label for="">Drop-off Time</label><br>
+        <input type="time" name="pickup_time"><br>
+        <label for="">Drop-off Driver</label><br>
+        <input type="text" name="pickup_driver"><br> 
+        <label for="">Bus name</label><br>
+        <input type="text" name="pickup_bus_name"><br>
+         <label for="">Bus number</label><br>
+        <input type="text" name="pickup_bus_number"><br>
+        <input type="submit" id="submit">
+    </form>
+</div> 
+</div>
+
+</main>
+
+<footer>
+   <p>© Business All Rights Reserved.</p> 
+</footer>
+
+
+ <script src="script.js"></script>
+</body>
+</html>

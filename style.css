@@ -1,0 +1,363 @@
+header{
+    background-color: #007aff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #header{
+       position: sticky !important;
+    top: 0; 
+    background-color: #007aff;
+    z-index: 1;
+    transition: top 1s;     
+          }
+  header>.div1{
+    width:30%;display: flex;flex-direction: row;color:#fff;
+  }
+  header>.div2{
+   width: 70%;
+  }
+  header>div>img{
+    width:100px;
+    height:60px;
+    margin-left: 80px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  header>div>ul{
+    margin-top: 40px;
+    text-align: right;
+    margin-right: 160px;
+  }
+  header>div>ul>li{
+  display:inline;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 30px;
+  list-style-type: none;
+  }
+  header>div>ul>li>a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.3s;
+  }
+  header>div>ul>li>a:hover{
+    color:#000000;
+  }
+body{
+    margin: 0;color: #363738;
+    padding: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside{
+    display: none;
+    position: sticky;top: 0;background-color: #007aff;
+    z-index: 100;
+    }
+    aside>div>img{
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+        
+        .sidenav a {
+        text-decoration: none;
+        display: block;
+        transition: 0.3s;
+        line-height: 35px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        padding:10px ;
+        padding-left: 15px;
+        }
+        
+        .sidenav a:hover {
+        background-color: #007aff;
+        color: #fff;
+        }
+        #img{
+        width: 60px;
+        margin-top: -40px;
+        margin-left: 10px;
+        }
+        .sidenav>img{
+            width: 80px;
+            margin: 20px;
+            margin-top: -40px;
+        }
+        .container {
+            display: none;
+            position: absolute;
+            right: 0;
+            margin-right: 40px;
+            margin-top: 10px;
+          }
+          .container2 {
+            display: block;
+            position: absolute;
+            right: 0;
+            margin-right: 40px;
+            margin-top: 10px;
+          }
+          .bar1, .bar2, .bar3 {
+            width: 20px;
+            height: 5px;
+            background-color: rgb(255, 255, 255);
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+          
+          .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+          }
+          
+          .change .bar2 {opacity: 0;}
+          
+          .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+          }
+
+
+          #enter{
+            display: flex;flex-direction: row;align-items: center;justify-content:center;
+          }
+          #enter>div{
+padding: 30px;width: 35%;
+          }
+
+          #enter form>input{
+               border-radius: 6px;padding: 10px;margin-bottom: 10px;border: 1px solid rgb(224, 219, 219);
+          width:100% !important;
+            }
+#submit{
+    background-color: #007aff;color: #fff;width: auto;
+}
+#enter form{
+   padding: 10px;border-radius:10px;box-shadow: 1px 1px 10px rgb(202, 200, 200);
+}
+#list{
+    padding: 10px;text-align: center;background-color: rgb(236, 236, 236);
+}
+  footer{
+    background-color: #1c1c1d;color: #fff;padding: 30px;text-align: center;display: none;
+  }
+  #divideAdmin{
+    display: flex;flex-direction: row;justify-content: space-evenly;
+  }
+  #divideAdmin>div{
+    padding: 20px;
+  }
+  .divideAdmin1{
+    width: 78%;position: absolute;right: 0;
+  }
+  .divideAdmin2{
+    width: 17%;background-color: rgb(236, 236, 236);position: fixed;left: 0;bottom: 0;top: 0;
+  }
+  #myList{
+    margin-left:-12% !important;
+}
+.divideAdmin2 ul>li{
+  margin-bottom: 10px;
+  background-color: #007bff56;padding: 7px;border-radius: 5px;
+}
+.divideAdmin2>ul{
+  margin-top: 45%;
+}
+.divideAdmin2 a{
+  text-decoration: none;color: #000000;font-weight: 600;
+}
+.divideAdmin2 li:hover{
+  background-color: #007aff;color: #fff;
+}.divideAdmin2 a:hover{
+  background-color: #007aff;color: #fff;
+}
+  #divide{
+    display: flex;flex-direction: row;justify-content: space-evenly;
+  }
+  #divide>div{
+    padding: 20px;
+  }
+  .divo{
+    width: 20%; background-color: rgb(236, 236, 236);position: fixed;left: 0;bottom: 0;top: 0;
+  }
+  .divo ul{
+    margin-top: 35%;
+  }
+  .divo ul>li{
+    margin-bottom: 10px;
+    list-style-type: square;
+    background-color: #007bff56;padding: 7px;border-radius: 5px;
+  }
+  .divo a{
+    text-decoration: none;color: #000000;font-weight: 600;
+  }
+  .divo li:hover{
+    background-color: #007aff;color: #fff;
+  }.divo a:hover{
+    background-color: #007aff;color: #fff;
+  }
+  .divide1{
+    width:50% ;
+  }
+  .divider{
+    width: 75%;position: fixed;left: 0;
+  }
+  .divide2{
+    background-color: rgb(236, 236, 236);position: fixed;right: 0;bottom: 0;top: 0;width: 30% ;
+  }
+  .divide2 form{
+    margin-top: 30%;
+  }
+  .divide2 form>select{
+      border-radius: 6px;padding: 10px;margin-bottom: 10px;border: 1px solid rgb(224, 219, 219);
+    width:100%;
+  }
+  #divide form>select, input{
+    border-radius: 6px;padding: 10px;margin-bottom: 10px;border: 1px solid rgb(224, 219, 219);
+    width:100%;
+}
+#divide form{
+    padding: 20px;
+ }
+ #list form>input{
+    border-radius: 6px;padding: 10px;margin-bottom: 10px;border: 1px solid rgb(224, 219, 219);
+    width:200px;
+}
+#list form>select{
+  border-radius: 6px;padding: 10px;margin-bottom: 10px;border: 1px solid rgb(224, 219, 219);
+  width:200px;
+}
+#list form{
+    padding: 20px;
+ }
+th{
+    padding: 10px;background-color: #dce1e6;
+}
+table{
+    width: 100%;text-align: left;
+}
+table,tr,td,th{
+    border-bottom: 2px solid rgb(236, 236, 236);border-collapse: collapse;padding: 10px;
+}
+#driverTable,tr,td,th{
+  border-bottom: 2px solid rgb(236, 236, 236);border-collapse: collapse;padding: 10px;font-size: 14px;
+}
+
+.nav-container {
+  position: relative;
+  display: inline-block;
+  color: rgb(202, 196, 196);
+}
+
+
+#dropdown {
+  display: none;
+  position: absolute;
+  top: 90%;
+  left: -60%;
+  background-color: #007aff;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+#dropdown li{
+  list-style-type: none;
+}
+#dropdown a:hover {
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+#dropdown a {
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  padding: 15px;
+  color: #fff;
+  border-bottom:1px solid #ffffff;
+}
+
+
+#hoverer {
+  cursor: pointer;
+  color: rgb(255, 255, 255); border: 1px solid white;padding: 10px;border-radius: 10px;
+}
+
+/* Show the dropdown when either the "Services" link or the dropdown itself is hovered */
+#hoverer:hover + #dropdown,
+#dropdown:hover {
+  display: block;
+  
+}
+.add{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;margin-bottom: 10px;margin-top: 50px;
+}
+.linkBtn{
+  text-decoration: none;margin-right: 50px;
+  color: #1c1c1d;border: 1px solid #1c1c1d;padding: 7px;font-size: 14px;border-radius: 6px;
+}
+@media only screen and (max-width: 900px) {
+  .divideAdmin1{
+    width:100%;position: unset;
+  }
+  .divideAdmin2{
+    display: none;
+  }
+.divo{
+  display: none;
+}
+    #divide{
+        flex-direction: column;
+    }  .divide1{
+        width:auto;     
+      }
+      .divider{
+        width: auto;position: unset;
+      }
+      .divide2{
+        width: auto;height: auto;position: unset;
+      } .divide2 form{
+        margin-top: 0;
+      }
+          #enter{
+            flex-direction: column;
+          }
+          #enter>div{
+            padding: 10px;width: auto;
+          }
+            header{
+                display: none;
+            }
+aside{
+    display: block;
+}
+            .container{
+              display: inline-block;
+              cursor: pointer;
+              position:absolute;
+              top:15px;
+             }
+          }     
